@@ -27,7 +27,7 @@ public:
     // customer rental statement
     std::string statement() const;
     //calculates amount for current statmen
-    double amountFor() const;
+    double amountFor(const Rental& r) const;
 
 private:
     std::string name;

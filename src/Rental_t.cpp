@@ -10,7 +10,12 @@
 
 int main() {
 
-    // TODO:  Add test cases
+  {
+    Video movie("A", Video::REGULAR);
+    Rental rental(movie, 2);
+    assert(rental.getDaysRented() == 2);
+
+  }
 
     return 0;
 }
